@@ -1,0 +1,1250 @@
+[
+  {
+    "variant": "none",
+    "seed": 0,
+    "ckpt_path": "C:\\best_checkpoints_for_testing\\clean\\none_seed0.pt",
+    "loaded_epoch": 98,
+    "timestamp": "2026-09-28 12:43:35",
+    "corruptions": {
+      "clean": {
+        "severity": 0,
+        "accuracy": 0.9276,
+        "num_examples": 10000
+      },
+      "brightness": {
+        "1": {
+          "accuracy": 0.926,
+          "num_examples": 10000
+        },
+        "2": {
+          "accuracy": 0.9195,
+          "num_examples": 10000
+        },
+        "3": {
+          "accuracy": 0.9117,
+          "num_examples": 10000
+        },
+        "4": {
+          "accuracy": 0.8983,
+          "num_examples": 10000
+        },
+        "5": {
+          "accuracy": 0.8606,
+          "num_examples": 10000
+        }
+      },
+      "contrast": {
+        "1": {
+          "accuracy": 0.9206,
+          "num_examples": 10000
+        },
+        "2": {
+          "accuracy": 0.8781,
+          "num_examples": 10000
+        },
+        "3": {
+          "accuracy": 0.8218,
+          "num_examples": 10000
+        },
+        "4": {
+          "accuracy": 0.7002,
+          "num_examples": 10000
+        },
+        "5": {
+          "accuracy": 0.2797,
+          "num_examples": 10000
+        }
+      },
+      "defocus_blur": {
+        "1": {
+          "accuracy": 0.9239,
+          "num_examples": 10000
+        },
+        "2": {
+          "accuracy": 0.8993,
+          "num_examples": 10000
+        },
+        "3": {
+          "accuracy": 0.8184,
+          "num_examples": 10000
+        },
+        "4": {
+          "accuracy": 0.6847,
+          "num_examples": 10000
+        },
+        "5": {
+          "accuracy": 0.3843,
+          "num_examples": 10000
+        }
+      },
+      "elastic_transform": {
+        "1": {
+          "accuracy": 0.8632,
+          "num_examples": 10000
+        },
+        "2": {
+          "accuracy": 0.8558,
+          "num_examples": 10000
+        },
+        "3": {
+          "accuracy": 0.7956,
+          "num_examples": 10000
+        },
+        "4": {
+          "accuracy": 0.7085,
+          "num_examples": 10000
+        },
+        "5": {
+          "accuracy": 0.6602,
+          "num_examples": 10000
+        }
+      }
+    },
+    "condition": "clean",
+    "checkpoint": "C:\\best_checkpoints_for_testing\\clean\\none_seed0.pt"
+  },
+  {
+    "variant": "none",
+    "seed": 1,
+    "ckpt_path": "C:\\best_checkpoints_for_testing\\clean\\none_seed1.pt",
+    "loaded_epoch": 90,
+    "timestamp": "2026-09-28 12:44:30",
+    "corruptions": {
+      "clean": {
+        "severity": 0,
+        "accuracy": 0.9313,
+        "num_examples": 10000
+      },
+      "brightness": {
+        "1": {
+          "accuracy": 0.9275,
+          "num_examples": 10000
+        },
+        "2": {
+          "accuracy": 0.9233,
+          "num_examples": 10000
+        },
+        "3": {
+          "accuracy": 0.9156,
+          "num_examples": 10000
+        },
+        "4": {
+          "accuracy": 0.9039,
+          "num_examples": 10000
+        },
+        "5": {
+          "accuracy": 0.8708,
+          "num_examples": 10000
+        }
+      },
+      "contrast": {
+        "1": {
+          "accuracy": 0.9233,
+          "num_examples": 10000
+        },
+        "2": {
+          "accuracy": 0.878,
+          "num_examples": 10000
+        },
+        "3": {
+          "accuracy": 0.8267,
+          "num_examples": 10000
+        },
+        "4": {
+          "accuracy": 0.7054,
+          "num_examples": 10000
+        },
+        "5": {
+          "accuracy": 0.2822,
+          "num_examples": 10000
+        }
+      },
+      "defocus_blur": {
+        "1": {
+          "accuracy": 0.9276,
+          "num_examples": 10000
+        },
+        "2": {
+          "accuracy": 0.9007,
+          "num_examples": 10000
+        },
+        "3": {
+          "accuracy": 0.8231,
+          "num_examples": 10000
+        },
+        "4": {
+          "accuracy": 0.6968,
+          "num_examples": 10000
+        },
+        "5": {
+          "accuracy": 0.3948,
+          "num_examples": 10000
+        }
+      },
+      "elastic_transform": {
+        "1": {
+          "accuracy": 0.864,
+          "num_examples": 10000
+        },
+        "2": {
+          "accuracy": 0.8609,
+          "num_examples": 10000
+        },
+        "3": {
+          "accuracy": 0.7916,
+          "num_examples": 10000
+        },
+        "4": {
+          "accuracy": 0.7184,
+          "num_examples": 10000
+        },
+        "5": {
+          "accuracy": 0.6664,
+          "num_examples": 10000
+        }
+      }
+    },
+    "condition": "clean",
+    "checkpoint": "C:\\best_checkpoints_for_testing\\clean\\none_seed1.pt"
+  },
+  {
+    "variant": "none",
+    "seed": 2,
+    "ckpt_path": "C:\\best_checkpoints_for_testing\\clean\\none_seed2.pt",
+    "loaded_epoch": 99,
+    "timestamp": "2026-09-28 12:45:29",
+    "corruptions": {
+      "clean": {
+        "severity": 0,
+        "accuracy": 0.9303,
+        "num_examples": 10000
+      },
+      "brightness": {
+        "1": {
+          "accuracy": 0.9286,
+          "num_examples": 10000
+        },
+        "2": {
+          "accuracy": 0.9231,
+          "num_examples": 10000
+        },
+        "3": {
+          "accuracy": 0.9157,
+          "num_examples": 10000
+        },
+        "4": {
+          "accuracy": 0.9042,
+          "num_examples": 10000
+        },
+        "5": {
+          "accuracy": 0.8697,
+          "num_examples": 10000
+        }
+      },
+      "contrast": {
+        "1": {
+          "accuracy": 0.9237,
+          "num_examples": 10000
+        },
+        "2": {
+          "accuracy": 0.8743,
+          "num_examples": 10000
+        },
+        "3": {
+          "accuracy": 0.8181,
+          "num_examples": 10000
+        },
+        "4": {
+          "accuracy": 0.6928,
+          "num_examples": 10000
+        },
+        "5": {
+          "accuracy": 0.299,
+          "num_examples": 10000
+        }
+      },
+      "defocus_blur": {
+        "1": {
+          "accuracy": 0.9255,
+          "num_examples": 10000
+        },
+        "2": {
+          "accuracy": 0.9044,
+          "num_examples": 10000
+        },
+        "3": {
+          "accuracy": 0.8201,
+          "num_examples": 10000
+        },
+        "4": {
+          "accuracy": 0.6743,
+          "num_examples": 10000
+        },
+        "5": {
+          "accuracy": 0.3818,
+          "num_examples": 10000
+        }
+      },
+      "elastic_transform": {
+        "1": {
+          "accuracy": 0.86,
+          "num_examples": 10000
+        },
+        "2": {
+          "accuracy": 0.8607,
+          "num_examples": 10000
+        },
+        "3": {
+          "accuracy": 0.7889,
+          "num_examples": 10000
+        },
+        "4": {
+          "accuracy": 0.7018,
+          "num_examples": 10000
+        },
+        "5": {
+          "accuracy": 0.6548,
+          "num_examples": 10000
+        }
+      }
+    },
+    "condition": "clean",
+    "checkpoint": "C:\\best_checkpoints_for_testing\\clean\\none_seed2.pt"
+  },
+  {
+    "variant": "se",
+    "seed": 0,
+    "ckpt_path": "C:\\best_checkpoints_for_testing\\clean\\se_seed0.pt",
+    "loaded_epoch": 98,
+    "timestamp": "2026-09-28 12:46:23",
+    "corruptions": {
+      "clean": {
+        "severity": 0,
+        "accuracy": 0.9314,
+        "num_examples": 10000
+      },
+      "brightness": {
+        "1": {
+          "accuracy": 0.9294,
+          "num_examples": 10000
+        },
+        "2": {
+          "accuracy": 0.9231,
+          "num_examples": 10000
+        },
+        "3": {
+          "accuracy": 0.9137,
+          "num_examples": 10000
+        },
+        "4": {
+          "accuracy": 0.9063,
+          "num_examples": 10000
+        },
+        "5": {
+          "accuracy": 0.8789,
+          "num_examples": 10000
+        }
+      },
+      "contrast": {
+        "1": {
+          "accuracy": 0.9244,
+          "num_examples": 10000
+        },
+        "2": {
+          "accuracy": 0.8749,
+          "num_examples": 10000
+        },
+        "3": {
+          "accuracy": 0.8154,
+          "num_examples": 10000
+        },
+        "4": {
+          "accuracy": 0.6764,
+          "num_examples": 10000
+        },
+        "5": {
+          "accuracy": 0.2644,
+          "num_examples": 10000
+        }
+      },
+      "defocus_blur": {
+        "1": {
+          "accuracy": 0.9284,
+          "num_examples": 10000
+        },
+        "2": {
+          "accuracy": 0.91,
+          "num_examples": 10000
+        },
+        "3": {
+          "accuracy": 0.8437,
+          "num_examples": 10000
+        },
+        "4": {
+          "accuracy": 0.7243,
+          "num_examples": 10000
+        },
+        "5": {
+          "accuracy": 0.4539,
+          "num_examples": 10000
+        }
+      },
+      "elastic_transform": {
+        "1": {
+          "accuracy": 0.8729,
+          "num_examples": 10000
+        },
+        "2": {
+          "accuracy": 0.8695,
+          "num_examples": 10000
+        },
+        "3": {
+          "accuracy": 0.8211,
+          "num_examples": 10000
+        },
+        "4": {
+          "accuracy": 0.7463,
+          "num_examples": 10000
+        },
+        "5": {
+          "accuracy": 0.6814,
+          "num_examples": 10000
+        }
+      }
+    },
+    "condition": "clean",
+    "checkpoint": "C:\\best_checkpoints_for_testing\\clean\\se_seed0.pt"
+  },
+  {
+    "variant": "se",
+    "seed": 1,
+    "ckpt_path": "C:\\best_checkpoints_for_testing\\clean\\se_seed1.pt",
+    "loaded_epoch": 98,
+    "timestamp": "2026-09-28 12:47:22",
+    "corruptions": {
+      "clean": {
+        "severity": 0,
+        "accuracy": 0.9341,
+        "num_examples": 10000
+      },
+      "brightness": {
+        "1": {
+          "accuracy": 0.9313,
+          "num_examples": 10000
+        },
+        "2": {
+          "accuracy": 0.9255,
+          "num_examples": 10000
+        },
+        "3": {
+          "accuracy": 0.917,
+          "num_examples": 10000
+        },
+        "4": {
+          "accuracy": 0.9049,
+          "num_examples": 10000
+        },
+        "5": {
+          "accuracy": 0.8722,
+          "num_examples": 10000
+        }
+      },
+      "contrast": {
+        "1": {
+          "accuracy": 0.9259,
+          "num_examples": 10000
+        },
+        "2": {
+          "accuracy": 0.8737,
+          "num_examples": 10000
+        },
+        "3": {
+          "accuracy": 0.8139,
+          "num_examples": 10000
+        },
+        "4": {
+          "accuracy": 0.6742,
+          "num_examples": 10000
+        },
+        "5": {
+          "accuracy": 0.2638,
+          "num_examples": 10000
+        }
+      },
+      "defocus_blur": {
+        "1": {
+          "accuracy": 0.9315,
+          "num_examples": 10000
+        },
+        "2": {
+          "accuracy": 0.9115,
+          "num_examples": 10000
+        },
+        "3": {
+          "accuracy": 0.8433,
+          "num_examples": 10000
+        },
+        "4": {
+          "accuracy": 0.7206,
+          "num_examples": 10000
+        },
+        "5": {
+          "accuracy": 0.4527,
+          "num_examples": 10000
+        }
+      },
+      "elastic_transform": {
+        "1": {
+          "accuracy": 0.8702,
+          "num_examples": 10000
+        },
+        "2": {
+          "accuracy": 0.8709,
+          "num_examples": 10000
+        },
+        "3": {
+          "accuracy": 0.8126,
+          "num_examples": 10000
+        },
+        "4": {
+          "accuracy": 0.7222,
+          "num_examples": 10000
+        },
+        "5": {
+          "accuracy": 0.6704,
+          "num_examples": 10000
+        }
+      }
+    },
+    "condition": "clean",
+    "checkpoint": "C:\\best_checkpoints_for_testing\\clean\\se_seed1.pt"
+  },
+  {
+    "variant": "se",
+    "seed": 2,
+    "ckpt_path": "C:\\best_checkpoints_for_testing\\clean\\se_seed2.pt",
+    "loaded_epoch": 96,
+    "timestamp": "2026-09-28 12:48:21",
+    "corruptions": {
+      "clean": {
+        "severity": 0,
+        "accuracy": 0.9349,
+        "num_examples": 10000
+      },
+      "brightness": {
+        "1": {
+          "accuracy": 0.9334,
+          "num_examples": 10000
+        },
+        "2": {
+          "accuracy": 0.9267,
+          "num_examples": 10000
+        },
+        "3": {
+          "accuracy": 0.9174,
+          "num_examples": 10000
+        },
+        "4": {
+          "accuracy": 0.9071,
+          "num_examples": 10000
+        },
+        "5": {
+          "accuracy": 0.8759,
+          "num_examples": 10000
+        }
+      },
+      "contrast": {
+        "1": {
+          "accuracy": 0.9232,
+          "num_examples": 10000
+        },
+        "2": {
+          "accuracy": 0.8721,
+          "num_examples": 10000
+        },
+        "3": {
+          "accuracy": 0.8086,
+          "num_examples": 10000
+        },
+        "4": {
+          "accuracy": 0.6605,
+          "num_examples": 10000
+        },
+        "5": {
+          "accuracy": 0.2503,
+          "num_examples": 10000
+        }
+      },
+      "defocus_blur": {
+        "1": {
+          "accuracy": 0.93,
+          "num_examples": 10000
+        },
+        "2": {
+          "accuracy": 0.9127,
+          "num_examples": 10000
+        },
+        "3": {
+          "accuracy": 0.8486,
+          "num_examples": 10000
+        },
+        "4": {
+          "accuracy": 0.7343,
+          "num_examples": 10000
+        },
+        "5": {
+          "accuracy": 0.5293,
+          "num_examples": 10000
+        }
+      },
+      "elastic_transform": {
+        "1": {
+          "accuracy": 0.8768,
+          "num_examples": 10000
+        },
+        "2": {
+          "accuracy": 0.8737,
+          "num_examples": 10000
+        },
+        "3": {
+          "accuracy": 0.8223,
+          "num_examples": 10000
+        },
+        "4": {
+          "accuracy": 0.7342,
+          "num_examples": 10000
+        },
+        "5": {
+          "accuracy": 0.6709,
+          "num_examples": 10000
+        }
+      }
+    },
+    "condition": "clean",
+    "checkpoint": "C:\\best_checkpoints_for_testing\\clean\\se_seed2.pt"
+  },
+  {
+    "variant": "bam",
+    "seed": 0,
+    "ckpt_path": "C:\\best_checkpoints_for_testing\\clean\\bam_seed0.pt",
+    "loaded_epoch": 95,
+    "timestamp": "2026-09-28 12:49:21",
+    "corruptions": {
+      "clean": {
+        "severity": 0,
+        "accuracy": 0.9396,
+        "num_examples": 10000
+      },
+      "brightness": {
+        "1": {
+          "accuracy": 0.9358,
+          "num_examples": 10000
+        },
+        "2": {
+          "accuracy": 0.9329,
+          "num_examples": 10000
+        },
+        "3": {
+          "accuracy": 0.9243,
+          "num_examples": 10000
+        },
+        "4": {
+          "accuracy": 0.9126,
+          "num_examples": 10000
+        },
+        "5": {
+          "accuracy": 0.8817,
+          "num_examples": 10000
+        }
+      },
+      "contrast": {
+        "1": {
+          "accuracy": 0.9336,
+          "num_examples": 10000
+        },
+        "2": {
+          "accuracy": 0.8833,
+          "num_examples": 10000
+        },
+        "3": {
+          "accuracy": 0.8262,
+          "num_examples": 10000
+        },
+        "4": {
+          "accuracy": 0.6959,
+          "num_examples": 10000
+        },
+        "5": {
+          "accuracy": 0.283,
+          "num_examples": 10000
+        }
+      },
+      "defocus_blur": {
+        "1": {
+          "accuracy": 0.9375,
+          "num_examples": 10000
+        },
+        "2": {
+          "accuracy": 0.9185,
+          "num_examples": 10000
+        },
+        "3": {
+          "accuracy": 0.8553,
+          "num_examples": 10000
+        },
+        "4": {
+          "accuracy": 0.7379,
+          "num_examples": 10000
+        },
+        "5": {
+          "accuracy": 0.4217,
+          "num_examples": 10000
+        }
+      },
+      "elastic_transform": {
+        "1": {
+          "accuracy": 0.8827,
+          "num_examples": 10000
+        },
+        "2": {
+          "accuracy": 0.8818,
+          "num_examples": 10000
+        },
+        "3": {
+          "accuracy": 0.8281,
+          "num_examples": 10000
+        },
+        "4": {
+          "accuracy": 0.7447,
+          "num_examples": 10000
+        },
+        "5": {
+          "accuracy": 0.6879,
+          "num_examples": 10000
+        }
+      }
+    },
+    "condition": "clean",
+    "checkpoint": "C:\\best_checkpoints_for_testing\\clean\\bam_seed0.pt"
+  },
+  {
+    "variant": "bam",
+    "seed": 1,
+    "ckpt_path": "C:\\best_checkpoints_for_testing\\clean\\bam_seed1.pt",
+    "loaded_epoch": 92,
+    "timestamp": "2026-09-28 12:50:42",
+    "corruptions": {
+      "clean": {
+        "severity": 0,
+        "accuracy": 0.9384,
+        "num_examples": 10000
+      },
+      "brightness": {
+        "1": {
+          "accuracy": 0.9351,
+          "num_examples": 10000
+        },
+        "2": {
+          "accuracy": 0.931,
+          "num_examples": 10000
+        },
+        "3": {
+          "accuracy": 0.9226,
+          "num_examples": 10000
+        },
+        "4": {
+          "accuracy": 0.91,
+          "num_examples": 10000
+        },
+        "5": {
+          "accuracy": 0.8784,
+          "num_examples": 10000
+        }
+      },
+      "contrast": {
+        "1": {
+          "accuracy": 0.9294,
+          "num_examples": 10000
+        },
+        "2": {
+          "accuracy": 0.8883,
+          "num_examples": 10000
+        },
+        "3": {
+          "accuracy": 0.8446,
+          "num_examples": 10000
+        },
+        "4": {
+          "accuracy": 0.7295,
+          "num_examples": 10000
+        },
+        "5": {
+          "accuracy": 0.3262,
+          "num_examples": 10000
+        }
+      },
+      "defocus_blur": {
+        "1": {
+          "accuracy": 0.9357,
+          "num_examples": 10000
+        },
+        "2": {
+          "accuracy": 0.9161,
+          "num_examples": 10000
+        },
+        "3": {
+          "accuracy": 0.8547,
+          "num_examples": 10000
+        },
+        "4": {
+          "accuracy": 0.7304,
+          "num_examples": 10000
+        },
+        "5": {
+          "accuracy": 0.4283,
+          "num_examples": 10000
+        }
+      },
+      "elastic_transform": {
+        "1": {
+          "accuracy": 0.8755,
+          "num_examples": 10000
+        },
+        "2": {
+          "accuracy": 0.8763,
+          "num_examples": 10000
+        },
+        "3": {
+          "accuracy": 0.8259,
+          "num_examples": 10000
+        },
+        "4": {
+          "accuracy": 0.7392,
+          "num_examples": 10000
+        },
+        "5": {
+          "accuracy": 0.687,
+          "num_examples": 10000
+        }
+      }
+    },
+    "condition": "clean",
+    "checkpoint": "C:\\best_checkpoints_for_testing\\clean\\bam_seed1.pt"
+  },
+  {
+    "variant": "bam",
+    "seed": 2,
+    "ckpt_path": "C:\\best_checkpoints_for_testing\\clean\\bam_seed2.pt",
+    "loaded_epoch": 97,
+    "timestamp": "2026-09-28 12:52:03",
+    "corruptions": {
+      "clean": {
+        "severity": 0,
+        "accuracy": 0.9388,
+        "num_examples": 10000
+      },
+      "brightness": {
+        "1": {
+          "accuracy": 0.9381,
+          "num_examples": 10000
+        },
+        "2": {
+          "accuracy": 0.9329,
+          "num_examples": 10000
+        },
+        "3": {
+          "accuracy": 0.9236,
+          "num_examples": 10000
+        },
+        "4": {
+          "accuracy": 0.9136,
+          "num_examples": 10000
+        },
+        "5": {
+          "accuracy": 0.8847,
+          "num_examples": 10000
+        }
+      },
+      "contrast": {
+        "1": {
+          "accuracy": 0.9296,
+          "num_examples": 10000
+        },
+        "2": {
+          "accuracy": 0.8917,
+          "num_examples": 10000
+        },
+        "3": {
+          "accuracy": 0.8421,
+          "num_examples": 10000
+        },
+        "4": {
+          "accuracy": 0.7294,
+          "num_examples": 10000
+        },
+        "5": {
+          "accuracy": 0.3104,
+          "num_examples": 10000
+        }
+      },
+      "defocus_blur": {
+        "1": {
+          "accuracy": 0.9347,
+          "num_examples": 10000
+        },
+        "2": {
+          "accuracy": 0.9212,
+          "num_examples": 10000
+        },
+        "3": {
+          "accuracy": 0.8535,
+          "num_examples": 10000
+        },
+        "4": {
+          "accuracy": 0.7283,
+          "num_examples": 10000
+        },
+        "5": {
+          "accuracy": 0.448,
+          "num_examples": 10000
+        }
+      },
+      "elastic_transform": {
+        "1": {
+          "accuracy": 0.8813,
+          "num_examples": 10000
+        },
+        "2": {
+          "accuracy": 0.874,
+          "num_examples": 10000
+        },
+        "3": {
+          "accuracy": 0.8299,
+          "num_examples": 10000
+        },
+        "4": {
+          "accuracy": 0.7354,
+          "num_examples": 10000
+        },
+        "5": {
+          "accuracy": 0.6718,
+          "num_examples": 10000
+        }
+      }
+    },
+    "condition": "clean",
+    "checkpoint": "C:\\best_checkpoints_for_testing\\clean\\bam_seed2.pt"
+  },
+  {
+    "variant": "cbam",
+    "seed": 0,
+    "ckpt_path": "C:\\best_checkpoints_for_testing\\clean\\cbam_seed0.pt",
+    "loaded_epoch": 92,
+    "timestamp": "2026-09-28 12:53:24",
+    "corruptions": {
+      "clean": {
+        "severity": 0,
+        "accuracy": 0.9302,
+        "num_examples": 10000
+      },
+      "brightness": {
+        "1": {
+          "accuracy": 0.929,
+          "num_examples": 10000
+        },
+        "2": {
+          "accuracy": 0.9252,
+          "num_examples": 10000
+        },
+        "3": {
+          "accuracy": 0.9165,
+          "num_examples": 10000
+        },
+        "4": {
+          "accuracy": 0.9047,
+          "num_examples": 10000
+        },
+        "5": {
+          "accuracy": 0.8689,
+          "num_examples": 10000
+        }
+      },
+      "contrast": {
+        "1": {
+          "accuracy": 0.9207,
+          "num_examples": 10000
+        },
+        "2": {
+          "accuracy": 0.8763,
+          "num_examples": 10000
+        },
+        "3": {
+          "accuracy": 0.8288,
+          "num_examples": 10000
+        },
+        "4": {
+          "accuracy": 0.7197,
+          "num_examples": 10000
+        },
+        "5": {
+          "accuracy": 0.3156,
+          "num_examples": 10000
+        }
+      },
+      "defocus_blur": {
+        "1": {
+          "accuracy": 0.9271,
+          "num_examples": 10000
+        },
+        "2": {
+          "accuracy": 0.9091,
+          "num_examples": 10000
+        },
+        "3": {
+          "accuracy": 0.8409,
+          "num_examples": 10000
+        },
+        "4": {
+          "accuracy": 0.7167,
+          "num_examples": 10000
+        },
+        "5": {
+          "accuracy": 0.4589,
+          "num_examples": 10000
+        }
+      },
+      "elastic_transform": {
+        "1": {
+          "accuracy": 0.8726,
+          "num_examples": 10000
+        },
+        "2": {
+          "accuracy": 0.8711,
+          "num_examples": 10000
+        },
+        "3": {
+          "accuracy": 0.8162,
+          "num_examples": 10000
+        },
+        "4": {
+          "accuracy": 0.7354,
+          "num_examples": 10000
+        },
+        "5": {
+          "accuracy": 0.6799,
+          "num_examples": 10000
+        }
+      }
+    },
+    "condition": "clean",
+    "checkpoint": "C:\\best_checkpoints_for_testing\\clean\\cbam_seed0.pt"
+  },
+  {
+    "variant": "cbam",
+    "seed": 1,
+    "ckpt_path": "C:\\best_checkpoints_for_testing\\clean\\cbam_seed1.pt",
+    "loaded_epoch": 95,
+    "timestamp": "2026-09-28 12:54:38",
+    "corruptions": {
+      "clean": {
+        "severity": 0,
+        "accuracy": 0.931,
+        "num_examples": 10000
+      },
+      "brightness": {
+        "1": {
+          "accuracy": 0.9293,
+          "num_examples": 10000
+        },
+        "2": {
+          "accuracy": 0.9258,
+          "num_examples": 10000
+        },
+        "3": {
+          "accuracy": 0.9159,
+          "num_examples": 10000
+        },
+        "4": {
+          "accuracy": 0.9043,
+          "num_examples": 10000
+        },
+        "5": {
+          "accuracy": 0.8718,
+          "num_examples": 10000
+        }
+      },
+      "contrast": {
+        "1": {
+          "accuracy": 0.9248,
+          "num_examples": 10000
+        },
+        "2": {
+          "accuracy": 0.88,
+          "num_examples": 10000
+        },
+        "3": {
+          "accuracy": 0.8264,
+          "num_examples": 10000
+        },
+        "4": {
+          "accuracy": 0.7134,
+          "num_examples": 10000
+        },
+        "5": {
+          "accuracy": 0.293,
+          "num_examples": 10000
+        }
+      },
+      "defocus_blur": {
+        "1": {
+          "accuracy": 0.9284,
+          "num_examples": 10000
+        },
+        "2": {
+          "accuracy": 0.9097,
+          "num_examples": 10000
+        },
+        "3": {
+          "accuracy": 0.8378,
+          "num_examples": 10000
+        },
+        "4": {
+          "accuracy": 0.7277,
+          "num_examples": 10000
+        },
+        "5": {
+          "accuracy": 0.4988,
+          "num_examples": 10000
+        }
+      },
+      "elastic_transform": {
+        "1": {
+          "accuracy": 0.8684,
+          "num_examples": 10000
+        },
+        "2": {
+          "accuracy": 0.8637,
+          "num_examples": 10000
+        },
+        "3": {
+          "accuracy": 0.8161,
+          "num_examples": 10000
+        },
+        "4": {
+          "accuracy": 0.7272,
+          "num_examples": 10000
+        },
+        "5": {
+          "accuracy": 0.6694,
+          "num_examples": 10000
+        }
+      }
+    },
+    "condition": "clean",
+    "checkpoint": "C:\\best_checkpoints_for_testing\\clean\\cbam_seed1.pt"
+  },
+  {
+    "variant": "cbam",
+    "seed": 2,
+    "ckpt_path": "C:\\best_checkpoints_for_testing\\clean\\cbam_seed2.pt",
+    "loaded_epoch": 96,
+    "timestamp": "2026-09-28 12:55:53",
+    "corruptions": {
+      "clean": {
+        "severity": 0,
+        "accuracy": 0.9283,
+        "num_examples": 10000
+      },
+      "brightness": {
+        "1": {
+          "accuracy": 0.9255,
+          "num_examples": 10000
+        },
+        "2": {
+          "accuracy": 0.9198,
+          "num_examples": 10000
+        },
+        "3": {
+          "accuracy": 0.911,
+          "num_examples": 10000
+        },
+        "4": {
+          "accuracy": 0.9007,
+          "num_examples": 10000
+        },
+        "5": {
+          "accuracy": 0.8639,
+          "num_examples": 10000
+        }
+      },
+      "contrast": {
+        "1": {
+          "accuracy": 0.9158,
+          "num_examples": 10000
+        },
+        "2": {
+          "accuracy": 0.859,
+          "num_examples": 10000
+        },
+        "3": {
+          "accuracy": 0.7948,
+          "num_examples": 10000
+        },
+        "4": {
+          "accuracy": 0.6457,
+          "num_examples": 10000
+        },
+        "5": {
+          "accuracy": 0.2739,
+          "num_examples": 10000
+        }
+      },
+      "defocus_blur": {
+        "1": {
+          "accuracy": 0.9245,
+          "num_examples": 10000
+        },
+        "2": {
+          "accuracy": 0.904,
+          "num_examples": 10000
+        },
+        "3": {
+          "accuracy": 0.8373,
+          "num_examples": 10000
+        },
+        "4": {
+          "accuracy": 0.7332,
+          "num_examples": 10000
+        },
+        "5": {
+          "accuracy": 0.5,
+          "num_examples": 10000
+        }
+      },
+      "elastic_transform": {
+        "1": {
+          "accuracy": 0.8643,
+          "num_examples": 10000
+        },
+        "2": {
+          "accuracy": 0.8568,
+          "num_examples": 10000
+        },
+        "3": {
+          "accuracy": 0.8081,
+          "num_examples": 10000
+        },
+        "4": {
+          "accuracy": 0.7189,
+          "num_examples": 10000
+        },
+        "5": {
+          "accuracy": 0.6582,
+          "num_examples": 10000
+        }
+      }
+    },
+    "condition": "clean",
+    "checkpoint": "C:\\best_checkpoints_for_testing\\clean\\cbam_seed2.pt"
+  }
+]
