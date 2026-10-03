@@ -1,1 +1,7 @@
 .venv/
+
+__pycache__/
+*.pyc
+week4_corrupted/checkpoints/
+week4_corrupted/logs/
+week4_deliverables/evaluation_results/
