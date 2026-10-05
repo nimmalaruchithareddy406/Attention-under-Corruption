@@ -15,7 +15,7 @@ RESULTS_DIR = r".\evaluation_results"
 
 RESULTS_FILE = os.path.join(
     RESULTS_DIR,
-    "corrupted_results.json"
+    "corrupted_results_15corr.json"
 )
 
 VARIANTS = [

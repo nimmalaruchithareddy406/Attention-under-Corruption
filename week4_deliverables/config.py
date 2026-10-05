@@ -56,7 +56,7 @@ CKPT_NAME = "ckpt_{variant}_seed{seed}_epoch_{epoch}.pt"  # Week 4 naming; never
 # ---------------------------------------------------------------------------
 # CIFAR-10-C evaluation (Part C)
 # ---------------------------------------------------------------------------
-PRIMARY_CORRUPTIONS = ["brightness", "contrast", "defocus_blur", "elastic_transform"]
+PRIMARY_CORRUPTIONS = ["gaussian_noise", "shot_noise", "impulse_noise", "defocus_blur", "glass_blur", "motion_blur", "zoom_blur", "snow", "frost", "fog", "brightness", "contrast", "elastic_transform", "pixelate", "jpeg_compression"]
 SEVERITIES = [1, 2, 3, 4, 5]
 CIFAR10C_DIR = "C:/cifar_data/cifar10-c/CIFAR-10-C"
 CLEAN_SEVERITY = 0  # clean CIFAR-10 test set is severity 0
