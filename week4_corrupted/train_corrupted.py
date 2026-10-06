@@ -212,7 +212,7 @@ def train_corrupted_variant(
         "cuda" if torch.cuda.is_available() else "cpu"
     )
 
-    checkpoint_dir = CHECKPOINT_ROOT / variant
+    checkpoint_dir = CHECKPOINT_ROOT / f"week4_corr_ckpts_{variant}_s{seed}"
     checkpoint_dir.mkdir(parents=True, exist_ok=True)
     LOG_DIR.mkdir(parents=True, exist_ok=True)
 

@@ -27,7 +27,10 @@ BATCH_SIZE = 128
 def load_clean_test(subset=None):
     eval_tf = trn.Compose([
         trn.ToTensor(),
-        trn.Normalize(config.NORMALIZE_MEAN, config.NORMALIZE_STD),
+        trn.Normalize(
+            config.NORMALIZE_MEAN,
+            config.NORMALIZE_STD
+        ),
     ])
 
     ds = torchvision.datasets.CIFAR10(
@@ -54,71 +57,125 @@ def load_corruption_arrays(name):
     """Load CIFAR-10-C files using memory mapping."""
 
     arr = np.load(
-        os.path.join(config.CIFAR10C_DIR, f"{name}.npy"),
+        os.path.join(
+            config.CIFAR10C_DIR,
+            f"{name}.npy"
+        ),
         mmap_mode="r"
     )
 
     labels = np.load(
-        os.path.join(config.CIFAR10C_DIR, "labels.npy"),
+        os.path.join(
+            config.CIFAR10C_DIR,
+            "labels.npy"
+        ),
         mmap_mode="r"
     )
 
-    assert arr.shape == (50000, 32, 32, 3)
+    assert arr.shape == (
+        50000,
+        32,
+        32,
+        3
+    )
+
     assert arr.dtype == np.uint8
+
     assert labels.shape == (50000,)
 
     return arr, labels
 
 
-def corruption_batches(arr, labels, severity, subset=None):
+def corruption_batches(
+    arr,
+    labels,
+    severity,
+    subset=None
+):
     """Yield one severity in small batches."""
 
-    n = subset if subset is not None else 10000
+    n = (
+        subset
+        if subset is not None
+        else 10000
+    )
 
-    start_index = (severity - 1) * 10000
+    start_index = (
+        severity - 1
+    ) * 10000
 
     mean = torch.tensor(
         config.NORMALIZE_MEAN,
         dtype=torch.float32
-    ).view(1, 3, 1, 1)
+    ).view(
+        1, 3, 1, 1
+    )
 
     std = torch.tensor(
         config.NORMALIZE_STD,
         dtype=torch.float32
-    ).view(1, 3, 1, 1)
+    ).view(
+        1, 3, 1, 1
+    )
 
-    for start in range(0, n, BATCH_SIZE):
+    for start in range(
+        0,
+        n,
+        BATCH_SIZE
+    ):
 
-        end = min(start + BATCH_SIZE, n)
+        end = min(
+            start + BATCH_SIZE,
+            n
+        )
 
         # Copy only this small batch into RAM
         images_np = np.array(
-            arr[start_index + start:start_index + end],
+            arr[
+                start_index + start:
+                start_index + end
+            ],
             copy=True
         )
 
         labels_np = np.array(
-            labels[start_index + start:start_index + end],
+            labels[
+                start_index + start:
+                start_index + end
+            ],
             copy=True
         )
 
         # HWC -> CHW
-        x = torch.from_numpy(images_np)
-        x = x.permute(0, 3, 1, 2)
+        x = torch.from_numpy(
+            images_np
+        )
+
+        x = x.permute(
+            0, 3, 1, 2
+        )
 
         # uint8 -> float32 [0,1]
         x = x.float().div_(255.0)
 
         # Normalize
-        x = (x - mean) / std
+        x = (
+            x - mean
+        ) / std
 
-        y = torch.from_numpy(labels_np).long()
+        y = torch.from_numpy(
+            labels_np
+        ).long()
 
         yield x, y
 
 
 @torch.no_grad()
-def evaluate_batches(model, batches, device):
+def evaluate_batches(
+    model,
+    batches,
+    device
+):
     """Evaluate model batch-by-batch."""
 
     correct = 0
@@ -133,12 +190,20 @@ def evaluate_batches(model, batches, device):
 
         output = model(x)
 
-        predictions = output.argmax(dim=1)
+        predictions = output.argmax(
+            dim=1
+        )
 
-        correct += (predictions == y).sum().item()
+        correct += (
+            predictions == y
+        ).sum().item()
+
         total += y.size(0)
 
-    accuracy = correct / max(total, 1)
+    accuracy = (
+        correct /
+        max(total, 1)
+    )
 
     return accuracy, total
 
@@ -151,29 +216,54 @@ def evaluate_variant(
 ):
 
     if device is None:
+
         device = torch.device(
-            "cuda" if torch.cuda.is_available() else "cpu"
+            "cuda"
+            if torch.cuda.is_available()
+            else "cpu"
         )
 
-    seed = config.SEED if seed is None else seed
+    seed = (
+        config.SEED
+        if seed is None
+        else seed
+    )
 
-    print(f"Using device: {device}")
+    print(
+        f"Using device: {device}"
+    )
 
     if device.type == "cuda":
+
         print(
-            f"GPU: {torch.cuda.get_device_name(0)}"
+            "GPU:",
+            torch.cuda.get_device_name(0)
         )
 
+    # -------------------------------------------------
     # Build exact same architecture
+    # -------------------------------------------------
+
     model = build_model(
         attention_type=variant
     ).to(device)
 
+    # -------------------------------------------------
     # Load checkpoint
-    if ckpt_path and os.path.exists(ckpt_path):
+    # -------------------------------------------------
 
-        print(f"Loading checkpoint:")
-        print(ckpt_path)
+    if (
+        ckpt_path
+        and os.path.exists(ckpt_path)
+    ):
+
+        print(
+            "Loading checkpoint:"
+        )
+
+        print(
+            ckpt_path
+        )
 
         checkpoint = torch.load(
             ckpt_path,
@@ -181,7 +271,9 @@ def evaluate_variant(
         )
 
         model.load_state_dict(
-            checkpoint["model_state_dict"]
+            checkpoint[
+                "model_state_dict"
+            ]
         )
 
         loaded_epoch = checkpoint.get(
@@ -189,12 +281,15 @@ def evaluate_variant(
         )
 
         print(
-            f"Checkpoint epoch: {loaded_epoch}"
+            f"Checkpoint epoch: "
+            f"{loaded_epoch}"
         )
 
     else:
+
         raise FileNotFoundError(
-            f"Checkpoint not found: {ckpt_path}"
+            f"Checkpoint not found: "
+            f"{ckpt_path}"
         )
 
     results = {
@@ -212,43 +307,58 @@ def evaluate_variant(
     # CLEAN CIFAR-10
     # -------------------------------------------------
 
-    print("\nEvaluating CLEAN CIFAR-10...")
+    print(
+        "\nEvaluating CLEAN CIFAR-10..."
+    )
 
     clean_loader = load_clean_test(
         subset=config.EVAL_CLEAN_SUBSET
     )
 
-    clean_acc, clean_total = evaluate_batches(
-        model,
-        clean_loader,
-        device
+    clean_acc, clean_total = (
+        evaluate_batches(
+            model,
+            clean_loader,
+            device
+        )
     )
 
-    results["corruptions"]["clean"] = {
+    results[
+        "corruptions"
+    ][
+        "clean"
+    ] = {
         "severity": 0,
         "accuracy": clean_acc,
         "num_examples": clean_total
     }
 
     print(
-        f"Clean accuracy: {clean_acc * 100:.2f}%"
+        f"Clean accuracy: "
+        f"{clean_acc * 100:.2f}%"
     )
 
     # -------------------------------------------------
     # CIFAR-10-C
     # -------------------------------------------------
 
-    for corruption in config.PRIMARY_CORRUPTIONS:
+    for corruption in (
+        config.PRIMARY_CORRUPTIONS
+    ):
 
         print(
             f"\n===== {corruption} ====="
         )
 
-        arr, labels = load_corruption_arrays(
-            corruption
+        arr, labels = (
+            load_corruption_arrays(
+                corruption
+            )
         )
 
-        for severity in config.SEVERITIES:
+        for severity in (
+            config.SEVERITIES
+        ):
 
             print(
                 f"Severity {severity}/5...",
@@ -260,16 +370,22 @@ def evaluate_variant(
                 arr,
                 labels,
                 severity,
-                subset=config.EVAL_CORRUPTION_SUBSET
+                subset=(
+                    config.EVAL_CORRUPTION_SUBSET
+                )
             )
 
-            acc, total = evaluate_batches(
-                model,
-                batches,
-                device
+            acc, total = (
+                evaluate_batches(
+                    model,
+                    batches,
+                    device
+                )
             )
 
-            results["corruptions"].setdefault(
+            results[
+                "corruptions"
+            ].setdefault(
                 corruption,
                 {}
             )[severity] = {
@@ -289,24 +405,48 @@ def summarize(results):
     output = {
         "variant": results["variant"],
         "seed": results["seed"],
-        "loaded_epoch": results["loaded_epoch"],
-        "clean_acc": results["corruptions"]["clean"]["accuracy"]
+        "loaded_epoch": results[
+            "loaded_epoch"
+        ],
+        "clean_acc": results[
+            "corruptions"
+        ][
+            "clean"
+        ][
+            "accuracy"
+        ]
     }
 
-    for corruption in config.PRIMARY_CORRUPTIONS:
+    for corruption in (
+        config.PRIMARY_CORRUPTIONS
+    ):
 
         accuracies = [
-            results["corruptions"][corruption][severity]["accuracy"]
+            results[
+                "corruptions"
+            ][
+                corruption
+            ][
+                severity
+            ][
+                "accuracy"
+            ]
             for severity in config.SEVERITIES
         ]
 
         output[corruption] = {
             "sev1_5_acc": accuracies,
-            "mean": float(np.mean(accuracies))
+            "mean": float(
+                np.mean(accuracies)
+            )
         }
 
     return output
 
+
+# ---------------------------------------------------------
+# COMMAND LINE
+# ---------------------------------------------------------
 
 if __name__ == "__main__":
 
@@ -329,9 +469,17 @@ if __name__ == "__main__":
         ckpt_path=ckpt
     )
 
-    print("\n==============================")
-    print("FINAL SUMMARY")
-    print("==============================")
+    print(
+        "\n=============================="
+    )
+
+    print(
+        "FINAL SUMMARY"
+    )
+
+    print(
+        "=============================="
+    )
 
     print(
         json.dumps(
