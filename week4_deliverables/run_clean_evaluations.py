@@ -9,13 +9,13 @@ from evaluate_batched import evaluate_variant
 # SETTINGS
 # ============================================================
 
-CHECKPOINT_DIR = r"C:\best_checkpoints_for_testing\clean"
+CHECKPOINT_DIR = r"C:\best_checkpoints_for_testing\clean_trainacc"
 
-RESULTS_DIR = r".\evaluation_results"
+RESULTS_DIR = r"C:\best_checkpoints_for_testing\clean_trainacc_results"
 
 RESULTS_FILE = os.path.join(
     RESULTS_DIR,
-    "clean_results.json"
+    "clean_results_15corr.json"
 )
 
 VARIANTS = [
